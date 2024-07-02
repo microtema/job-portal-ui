@@ -1,15 +1,101 @@
 {
   "jobs": [
-    {id: 1, name: 'Solution Architect', company: 'Mercedes-Benz AG', salary: '120K', cv:'Lorem...', status: "PENDING"},
-    {id: 2, name: 'Cloud Solution Architect', company: '1&1 Versatel GmbH', salary: '130K', coverPaper:'Lorem ...', status: "STARTED"},
-    {id: 3, name: 'Technical Product Owner', company: 'Attruvia AG', salary: '96K', status: "COMPLETED"},
-    {id: 4, name: 'Technical Project Manager', company: 'dmTech', salary: '140K', status: "CANCELLED"},
-    {id: 5, name: 'AI Prompt Engineer', company: 'BMV AG', salary: '', status: "PENDING"},
-    {id: 6, name: 'Machine Deep Learning', company: 'ENBW', salary: '100K', status: "TERMINATED"},
-    {id: 7, name: 'Process Manager', company: 'ISB AG', salary: '', status: "WAITING"},
-    {id: 8, name: 'IT Manager Infrastructure', company: 'Vektor AG', salary: '95K', status: "WAITING"},
-    {id: 8, name: 'Enterprise Solution Architect', company: 'R + V', salary: '110K', status: "WAITING"},
-    {id: 9, name: 'AI Solution Architect', company: 'Sopra Steria', salary: '', status: "WAITING"},
-    {id: 10, name: 'Presale Solution Architect', company: 'Porsche AG', salary: '120K', status: "WAITING"},
+    {
+      id: 1,
+      name: 'Solution Architect',
+      company: 'Mercedes-Benz AG',
+      salary: '120K',
+      cv: 'Lorem...',
+      certificates: [
+        {
+          title: 'AWS Solution Architect Associate'
+        }
+      ],
+      status: "PENDING",
+      startDate: "2024-05-01T09:30:00Z",
+      endDate: "2024-07-02T09:30:00Z",
+      contact: {name: "Julius Cesar", mail:  "julius.cesar@gmx.de", "mobile": "+49 151 123456789"}
+    },
+    {
+      id: 2,
+      name: 'Cloud Solution Architect',
+      company: '1&1 Versatel GmbH',
+      salary: '130K',
+      coverPaper: 'Lorem ...',
+      status: "STARTED",
+      startDate: "2024-06-01T09:30:00Z"
+    },
+    {
+      id: 3,
+      name: 'Technical Product Owner',
+      company: 'Attruvia AG',
+      salary: '96K',
+      status: "COMPLETED",
+      certificates: [
+        {
+          title: 'AWS Solution Architect Associate'
+        },
+        {
+          title: 'ISAQB Software Architect Foundation'
+        }
+      ],
+      startDate: "2024-05-01T09:30:00Z"
+    },
+    {
+      id: 4,
+      name: 'Technical Project Manager',
+      company: 'dmTech',
+      salary: '140K',
+      status: "CANCELLED"
+    },
+    {
+      id: 5,
+      name: 'AI Prompt Engineer',
+      company: 'BMV AG',
+      salary: '',
+      status: "PENDING"
+    },
+    {
+      id: 6,
+      name: 'Machine Deep Learning',
+      company: 'ENBW',
+      salary: '100K',
+      status: "TERMINATED"
+    },
+    {
+      id: 7,
+      name: 'Process Manager',
+      company: 'ISB AG',
+      salary: '',
+      status: "WAITING"
+    },
+    {
+      id: 8,
+      name: 'IT Manager Infrastructure',
+      company: 'Vektor AG',
+      salary: '95K',
+      status: "WAITING"
+    },
+    {
+      id: 8,
+      name: 'Enterprise Solution Architect',
+      company: 'R + V',
+      salary: '110K',
+      status: "WAITING"
+    },
+    {
+      id: 9,
+      name: 'AI Solution Architect',
+      company: 'Sopra Steria',
+      salary: '',
+      status: "WAITING"
+    },
+    {
+      id: 10,
+      name: 'Presale Solution Architect',
+      company: 'Porsche AG',
+      salary: '120K',
+      status: "WAITING"
+    }
   ]
 }

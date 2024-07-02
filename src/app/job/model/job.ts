@@ -8,7 +8,7 @@ export interface JobData {
   certificates?: any[];
   startDate?: Date;
   endDate?: Date;
-  contact?: string;
+  contact?: ContactData;
   status?: JobStatus;
 }
 
@@ -22,4 +22,10 @@ export interface JobDataPage {
   perPage: Number;
   total: Number;
   totalPages: Number;
+}
+
+export interface ContactData {
+  name: string;
+  mail: string;
+  mobile?: string
 }

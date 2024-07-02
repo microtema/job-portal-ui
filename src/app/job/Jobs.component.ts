@@ -6,6 +6,9 @@ import {JobData, JobDataPage} from "./model/job";
 
 import { merge, Observable, of as observableOf, pipe } from 'rxjs';
 import { catchError, map, startWith, switchMap } from 'rxjs/operators';
+import {MatIcon} from "@angular/material/icon";
+import {MatBadge} from "@angular/material/badge";
+import {ContactComponent} from "../component/contact/contact.component";
 
 @Component({
   selector: 'app-dashboard',
@@ -14,11 +17,13 @@ import { catchError, map, startWith, switchMap } from 'rxjs/operators';
   standalone: true,
   imports: [
     MatTableModule,
-    MatPaginator
+    MatPaginator,
+    MatIcon,
+    MatBadge, ContactComponent
   ]
 })
 export class JobsComponent implements OnInit{
-  displayedColumns: string[] = ['position', 'name', 'company', 'salary', 'cv', 'coverPaper', 'certificates', 'startDate', 'endDate', 'contact', 'status'];
+  displayedColumns: string[] = ['position', 'name', 'company', 'salary', 'cv', 'coverPaper', 'certificates', 'contact', 'startDate', 'endDate', 'status'];
   totalData?: Number;
   pageSizes = [5, 10, 20, 50];
   dataSource = new MatTableDataSource<JobData>();
