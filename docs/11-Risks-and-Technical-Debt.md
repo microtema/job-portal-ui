@@ -1,7 +1,9 @@
-# Risk and Technical Debt
+# Technical Debts
 
-:[Development Risk](11-Risks-and-Technical-Debt/Development Risk.md)
+## Known Issues
+- Initial implementation may have limited support for complex queries.
+- User interface might need optimization for different screen sizes.
 
-:[Deployment Risk](11-Risks-and-Technical-Debt/Deployment Risk.md)
-
-:[Operations Risk](11-Risks-and-Technical-Debt/Operations Risk.md)
+## Planned Improvements
+- Enhance the search functionality to support advanced filters.
+- Implement caching strategies to improve performance.

@@ -2,11 +2,11 @@ import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-details',
-  templateUrl: './details.component.html',
-  styleUrl: './details.component.css',
+  templateUrl: './profile.component.html',
+  styleUrl: './profile.component.css',
   standalone: true,
   imports: []
 })
-export class DetailsComponent {
+export class ProfileComponent {
 
 }

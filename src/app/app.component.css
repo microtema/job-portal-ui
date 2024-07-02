@@ -1,0 +1,20 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 100%;
+}
+
+nav a {
+  text-decoration: none;
+  border-bottom: 2px solid #ffffff;
+  display: inline-block;
+  color: #666666;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  outline: 0;
+}
+
+nav a.active {
+  border-bottom: 2px solid #84bbf3;
+}

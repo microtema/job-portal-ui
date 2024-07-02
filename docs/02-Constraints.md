@@ -1,12 +1,14 @@
-# Introduction and Goals
+# Constraints
 
-## Introduction
-The Job Portal is designed to manage job listings, user profiles, skills, certificates, and to match appropriate jobs based on job descriptions and present skills. 
-It aims to streamline the job search and application process for both job seekers and employers.
+## Technical Constraints
+- Must use Azure for cloud services.
+- Infrastructure as code must be managed using Terraform.
+- Serverless architecture utilizing Azure Functions and Durable Functions.
+- Continuous Integration and Deployment (CI/CD) must be implemented using GitHub Actions.
 
-## Goals
+## Organizational Constraints
+- Adherence to company security and data privacy policies.
+- Compliance with legal requirements such as GDPR.
 
-- Efficiently manage and store job-related data.
-- Match job seekers with suitable job listings.
-- Ensure scalability and flexibility using cloud-native technologies.
-- Provide a seamless and user-friendly experience for all users.
+## Financial Constraints
+- Optimize for cost-efficiency by leveraging Azure's pay-as-you-go model.
