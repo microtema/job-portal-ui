@@ -1,0 +1,5 @@
+@if(data?.length){
+@for(item of data; track item) {
+<div class="with-icon"><mat-icon>{{ item.completed ? 'check': ''}}</mat-icon> {{item.description}}</div>
+}
+}

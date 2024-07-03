@@ -14,6 +14,7 @@
       status: "PENDING",
       startDate: "2024-05-01T09:30:00Z",
       endDate: "2024-07-02T09:30:00Z",
+      interviews: [{description: "First interview with HR", completed: true}, {description: "Second interview with Team"}, {description: "Second interview with Management"}],
       contact: {name: "Julius Cesar", mail:  "julius.cesar@gmx.de", "mobile": "+49 151 123456789"}
     },
     {
@@ -21,15 +22,18 @@
       name: 'Cloud Solution Architect',
       company: '1&1 Versatel GmbH',
       salary: '130K',
+      cv: 'Lorem...',
       coverPaper: 'Lorem ...',
       status: "STARTED",
-      startDate: "2024-06-01T09:30:00Z"
+      startDate: "2024-06-01T09:30:00Z",
+      interviews: {total: 3, current: 3}
     },
     {
       id: 3,
       name: 'Technical Product Owner',
       company: 'Attruvia AG',
       salary: '96K',
+      cv: 'Lorem...',
       status: "COMPLETED",
       certificates: [
         {
@@ -39,63 +43,97 @@
           title: 'ISAQB Software Architect Foundation'
         }
       ],
-      startDate: "2024-05-01T09:30:00Z"
+      startDate: "2024-05-01T09:30:00Z",
+      endDate: "2024-07-02T09:30:00Z",
+      contact: {name: "Marco Polo", mail:  "marco.polo@gmx.de", "mobile": "+49 151 123456789"}
     },
     {
       id: 4,
       name: 'Technical Project Manager',
       company: 'dmTech',
       salary: '140K',
-      status: "CANCELLED"
+      cv: 'Lorem...',
+      status: "CANCELLED",
+      startDate: "2024-05-01T09:30:00Z",
+      endDate: "2024-07-02T09:30:00Z",
+      interviews: [{description: "First interview with HR"}, {description: "Second interview with Team"}]
     },
     {
       id: 5,
       name: 'AI Prompt Engineer',
       company: 'BMV AG',
+      cv: 'Lorem...',
       salary: '',
-      status: "PENDING"
+      status: "PENDING",
+      startDate: "2024-05-01T09:30:00Z"
     },
     {
       id: 6,
       name: 'Machine Deep Learning',
       company: 'ENBW',
       salary: '100K',
-      status: "TERMINATED"
+      cv: 'Lorem...',
+      status: "TERMINATED",
+      startDate: "2024-05-01T09:30:00Z",
+      endDate: "2024-07-02T09:30:00Z",
+      contact: {name: "Marco Polo", mail:  "marco.polo@gmx.de"},
+      interviews: [{description: "First interview with HR"}]
     },
     {
       id: 7,
       name: 'Process Manager',
       company: 'ISB AG',
+      cv: 'Lorem...',
       salary: '',
-      status: "WAITING"
+      status: "WAITING",
+      startDate: "2024-05-01T09:30:00Z",
     },
     {
       id: 8,
       name: 'IT Manager Infrastructure',
       company: 'Vektor AG',
       salary: '95K',
-      status: "WAITING"
+      status: "WAITING",
+      startDate: "2024-05-01T09:30:00Z",
+      contact: {name: "Marco Polo", "mobile": "+49 151 123456789"}
     },
     {
       id: 8,
       name: 'Enterprise Solution Architect',
       company: 'R + V',
       salary: '110K',
-      status: "WAITING"
+      status: "WAITING",
+      startDate: "2024-05-01T09:30:00Z"
     },
     {
       id: 9,
       name: 'AI Solution Architect',
       company: 'Sopra Steria',
       salary: '',
-      status: "WAITING"
+      status: "WAITING",
+      cv: 'Lorem...',
+      startDate: "2024-05-01T09:30:00Z",
+      certificates: [
+        {
+          title: 'AWS Solution Architect Associate'
+        },
+        {
+          title: 'ISAQB Software Architect Foundation'
+        },
+        {
+          title: 'Serverless Conf. London 2024'
+        }
+      ]
     },
     {
       id: 10,
       name: 'Presale Solution Architect',
       company: 'Porsche AG',
       salary: '120K',
-      status: "WAITING"
+      cv: 'Lorem...',
+      status: "WAITING",
+      startDate: "2024-05-01T09:30:00Z",
+      contact: {name: "Marco Polo", mail:  "marco.polo@gmx.de", "mobile": "+49 151 123456789"}
     }
   ]
 }

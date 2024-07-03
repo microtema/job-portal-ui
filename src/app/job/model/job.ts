@@ -10,6 +10,7 @@ export interface JobData {
   endDate?: Date;
   contact?: ContactData;
   status?: JobStatus;
+  interviews?: JobInterviewStatus[]
 }
 
 export enum JobStatus {
@@ -28,4 +29,12 @@ export interface ContactData {
   name: string;
   mail: string;
   mobile?: string
+}
+
+export interface JobInterviewStatus {
+  description:string;
+  dueDate?:Date;
+  duration?:number;
+  channel?: string;
+  completed:boolean
 }

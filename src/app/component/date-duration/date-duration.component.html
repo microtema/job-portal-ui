@@ -1,0 +1,8 @@
+@if(startDate != null) {
+Start: {{ startDate | date:'short'}}
+}
+@if(endDate != null) {
+<div>
+End:  {{ endDate | date:'short' }}
+</div>
+}

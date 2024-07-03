@@ -4,11 +4,13 @@ import {MatPaginator} from "@angular/material/paginator";
 import {JobService} from "./job.service";
 import {JobData, JobDataPage} from "./model/job";
 
-import { merge, Observable, of as observableOf, pipe } from 'rxjs';
-import { catchError, map, startWith, switchMap } from 'rxjs/operators';
+import { map, startWith, switchMap } from 'rxjs/operators';
 import {MatIcon} from "@angular/material/icon";
 import {MatBadge} from "@angular/material/badge";
 import {ContactComponent} from "../component/contact/contact.component";
+import {DateDurationComponent} from "../component/date-duration/date-duration.component";
+import {JobStatusComponent} from "../component/job-status/job-status.component";
+import {InterviewStatusComponent} from "../component/interview-status/interview-status.component";
 
 @Component({
   selector: 'app-dashboard',
@@ -19,11 +21,12 @@ import {ContactComponent} from "../component/contact/contact.component";
     MatTableModule,
     MatPaginator,
     MatIcon,
-    MatBadge, ContactComponent
+    MatBadge,
+    ContactComponent, DateDurationComponent, JobStatusComponent, InterviewStatusComponent
   ]
 })
 export class JobsComponent implements OnInit{
-  displayedColumns: string[] = ['position', 'name', 'company', 'salary', 'cv', 'coverPaper', 'certificates', 'contact', 'startDate', 'endDate', 'status'];
+  displayedColumns: string[] = ['position', 'name', 'company', 'salary', 'cv', 'coverPaper', 'certificates', 'contact', 'date', 'interviews', 'status'];
   totalData?: Number;
   pageSizes = [5, 10, 20, 50];
   dataSource = new MatTableDataSource<JobData>();
