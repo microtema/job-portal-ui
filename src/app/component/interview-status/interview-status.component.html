@@ -1,5 +1,16 @@
 @if(data?.length){
-@for(item of data; track item) {
-<div class="with-icon"><mat-icon>{{ item.completed ? 'check': ''}}</mat-icon> {{item.description}}</div>
-}
+  @for(item of data; track item) {
+    <div class="with-icon"><mat-icon>{{ item.completed ? 'check': (item.dueDate ? 'schedule': '')}}</mat-icon>
+      {{item.description}} <br />
+      {{item.dueDate | date :'short'}}
+    </div>
+      @if(item.participants?.length) {
+        <div class="with-icon"><mat-icon></mat-icon>Participants:</div>
+        @for(participant of item.participants; track participant) {
+        <div class="with-icon"><mat-icon>remove</mat-icon>{{participant.name}} <br />
+        {{participant.role}}
+        </div>
+        }
+      }
+  }
 }

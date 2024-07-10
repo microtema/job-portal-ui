@@ -1,9 +1,11 @@
 {
   "jobs": [
     {
-      id: 1,
+      id: "1",
       name: 'Solution Architect',
+      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
       company: 'Mercedes-Benz AG',
+      companyDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry',s standard dummy",
       salary: '120K',
       cv: 'Lorem...',
       certificates: [
@@ -14,27 +16,28 @@
       status: "PENDING",
       startDate: "2024-05-01T09:30:00Z",
       endDate: "2024-07-02T09:30:00Z",
-      interviews: [{description: "First interview with HR", completed: true}, {description: "Second interview with Team"}, {description: "Second interview with Management"}],
+      interviews: [{description: "Draft interview", completed: true}, {description: "Second interview with Team"}, {description: "Second interview with Management"}],
       contact: {name: "Julius Cesar", mail:  "julius.cesar@gmx.de", "mobile": "+49 151 123456789"}
     },
     {
-      id: 2,
+      id: "2",
       name: 'Cloud Solution Architect',
       company: '1&1 Versatel GmbH',
       salary: '130K',
       cv: 'Lorem...',
       coverPaper: 'Lorem ...',
-      status: "STARTED",
+      status: "PENDING",
       startDate: "2024-06-01T09:30:00Z",
       interviews: {total: 3, current: 3}
     },
     {
-      id: 3,
-      name: 'Technical Product Owner',
+      id: "3",
+      name: 'Enterprise Architektur',
       company: 'Attruvia AG',
-      salary: '96K',
+      salary: '120K',
       cv: 'Lorem...',
-      status: "COMPLETED",
+      status: "PENDING",
+      interviews: [{description:  "First Interview per Teams", dueDate:  "2024-07-16T15:00:00Z", participants:  [{name:  "Patrick Luchner", "role":  "People Lead/Disziplinarische Führung"}, {name:  "Markus Lammers", "role":  "Tribe Lead/Fachliche Führung"}, {name:  "Florian Ehrler", "role":  "Squad Owner"}, {name:  "Christoph Schaffa", "role":  "Squad Owner"}, {name:  "Dietlinde Neumann", "role":"Recruiterin People Management"}]}],
       certificates: [
         {
           title: 'AWS Solution Architect Associate'
@@ -43,12 +46,11 @@
           title: 'ISAQB Software Architect Foundation'
         }
       ],
-      startDate: "2024-05-01T09:30:00Z",
-      endDate: "2024-07-02T09:30:00Z",
-      contact: {name: "Marco Polo", mail:  "marco.polo@gmx.de", "mobile": "+49 151 123456789"}
+      startDate: "2024-07-10T09:00:00Z",
+      contact: {name: "Renate Bäumer / HR-Consultant Recruiting & Onboarding", mail:  "Renate.Baeumer@atruvia.de", "mobile": "+49 172 8565157"}
     },
     {
-      id: 4,
+      id: "4",
       name: 'Technical Project Manager',
       company: 'dmTech',
       salary: '140K',
@@ -59,58 +61,92 @@
       interviews: [{description: "First interview with HR"}, {description: "Second interview with Team"}]
     },
     {
-      id: 5,
+      id: "5",
       name: 'AI Prompt Engineer',
-      company: 'BMV AG',
+      company: 'BMW AG',
       cv: 'Lorem...',
       salary: '',
       status: "PENDING",
       startDate: "2024-05-01T09:30:00Z"
     },
     {
-      id: 6,
-      name: 'Machine Deep Learning',
+      id: "6",
+      name: 'Enterprise Architekt (w/m/d) - NETZ FIBA 02334223',
       company: 'ENBW',
-      salary: '100K',
+      salary: '120K',
       cv: 'Lorem...',
-      status: "TERMINATED",
+      status: "WAITING",
       startDate: "2024-05-01T09:30:00Z",
-      endDate: "2024-07-02T09:30:00Z",
-      contact: {name: "Marco Polo", mail:  "marco.polo@gmx.de"},
-      interviews: [{description: "First interview with HR"}]
+      contact: {name: "Karina Dutka", mail:  "k.dutka@enbw.com", "mobile":  "+49 721 95124264"},
+      interviews: [{description: "First interview", dueDate:  "2024-07-10T09:30:00Z"}],
+      certificates: [
+        {
+          title: 'AWS Solution Architect Associate'
+        },
+        {
+          title: 'ISAQB Software Architect Foundation'
+        },
+        {
+          title: 'Serverless Conf. London 2024'
+        },
+        {
+          title: 'Enterprise Architecture Management'
+        }
+      ]
     },
     {
-      id: 7,
+      id: "7",
       name: 'Process Manager',
       company: 'ISB AG',
       cv: 'Lorem...',
       salary: '',
-      status: "WAITING",
+      status: "PENDING",
       startDate: "2024-05-01T09:30:00Z",
     },
     {
-      id: 8,
+      id: "8",
       name: 'IT Manager Infrastructure',
       company: 'Vektor AG',
-      salary: '95K',
-      status: "WAITING",
+      salary: '125K',
+      status: "TERMINATED",
       startDate: "2024-05-01T09:30:00Z",
       contact: {name: "Marco Polo", "mobile": "+49 151 123456789"}
     },
     {
-      id: 8,
-      name: 'Enterprise Solution Architect',
+      id: "8",
+      name: 'Senior Solution Architect',
       company: 'R + V',
       salary: '110K',
+      cv: 'Lorem...',
       status: "WAITING",
-      startDate: "2024-05-01T09:30:00Z"
+      startDate: "2024-06-11T12:30:00Z",
+      contact: {name: "Recruiting", mail:  "recruiting@ruv.de"},
+      certificates: [
+        {
+          title: 'AWS Solution Architect Associate'
+        },
+        {
+          title: 'ISAQB Software Architect Foundation'
+        },
+        {
+          title: 'Serverless Conf. London 2024'
+        },
+        {
+          title: 'Enterprise Architecture Management'
+        }
+      ],
+      interviews: [
+        {description: "Draft interview", completed: true, dueDate: '2024-06-11T12:30:00Z' },
+        {description: "Management/HR interview", completed: true, dueDate: '2024-06-24T17:05:00Z', endDate: '2024-06-24T18:00:00Z' },
+        {description: "Technical interview" , dueDate: '2024-07-18T15:35:00Z'}
+      ]
     },
     {
-      id: 9,
+      id: "9",
       name: 'AI Solution Architect',
       company: 'Sopra Steria',
       salary: '',
-      status: "WAITING",
+      status: "TERMINATED",
       cv: 'Lorem...',
       startDate: "2024-05-01T09:30:00Z",
       certificates: [
@@ -126,14 +162,66 @@
       ]
     },
     {
-      id: 10,
+      id: "10",
       name: 'Presale Solution Architect',
       company: 'Porsche AG',
       salary: '120K',
       cv: 'Lorem...',
-      status: "WAITING",
+      status: "PENDING",
       startDate: "2024-05-01T09:30:00Z",
       contact: {name: "Marco Polo", mail:  "marco.polo@gmx.de", "mobile": "+49 151 123456789"}
+    },
+    {
+      id: "11",
+      name: 'Cloud Solution Architect',
+      company: 'adesso SE',
+      salary: '120K',
+      status: "WAITING",
+      cv: 'Lorem...',
+      startDate: "2024-06-11T12:30:00Z",
+      contact: {name: "Simon Engbers", mail:  "simon.engbers@adesso.de"},
+      interviews: [
+        {description: "Draft interview", completed: true, dueDate: '2024-06-11T12:30:00Z' },
+        {description: "Technical interview", completed: true, dueDate: '2024-07-03T16:00:00Z', endDate: '2024-07-03T17:30:00Z' },
+        {description: "Management/HR interview" }
+      ],
+      certificates: [
+        {
+          title: 'AWS Solution Architect Associate'
+        },
+        {
+          title: 'ISAQB Software Architect Foundation'
+        },
+        {
+          title: 'Serverless Conf. London 2024'
+        }
+      ]
+    },
+    {
+      id: "12",
+      name: 'Team Lead SaaS',
+      "description" : "As a Team Lead SaaS you will lead and inspire one or more agile teams and support them building and maintaining the SaaS offerings for Cinemo. The products you and your teams are building will enable customers to experience the future of digital media experiences. It lets them bring any content to any device with our highly innovative technology. \n\nTasks\n\nIn this role, you will:\n\nExpand and mentor your team - you are a role model of living a healthy feedback culture for your team\nLead your team in an agile environment, constantly improving the way of working for you and your team in a highly dynamic business\nRecruit new team members and grow your team in a healthy way \nEnable the teams to deliver customer values iteratively, working closely together with Product Management and UX\nCoordinate stakeholders and help the team work on the right priorities.\nGuide and teach your team to produce high quality code and to work according to modern agile software craftsmanship and testing approaches and ensure service quality, security and operability\nKeep yourself up to date about industry trends, agile and management topics\nRequirements\n\nWhat you will need to succeed:\n\nSeveral years of experience in technical leadership or people management in software engineering \nTechnical knowledge and understanding for architectures and system designs in a SaaS environment\nMultiple years of experience in professional Software Development \nWorking experience with agile development practices and active ambassador of modern engineering practices \nFluent English and excellent international communication skills\nHighly communicative and collaborative, striving to achieve the best solution for all\nTeam\n\nteam is agile, experienced, crossfunctional, international and site is around 6 people.",
+      company: 'Cinemo GmbH',
+      "companyDescription": "Cinemo is a global provider of highly innovative infotainment products that make every screen an opportunity. Its range of award-winning, fully integrated, low-footprint digital media offerings combine high performance with high quality and are truly system agnostic. Whether embedded, as mobile apps or through the cloud, Cinemo supports all digital media scenarios for any industry and any device. Its product portfolio is designed and built to deliver excellence, accelerate time to market, and lower TCO for its clients while creating digital media experiences that matter.\n\n\n\nFounded in 2008, and with a strong history of industry firsts, Cinemo is the partner of choice for more than 40 market-leading OEMs and over 20 tier-1s. The company works with the top high-tech and consumer electronic companies as well as global music and video content providers. Cinemo’s global team of 200+ innovative thinkers from 35 nationalities continuously delivers groundbreaking innovation.",
+      salary: '120K',
+      status: "WAITING",
+      cv: 'Lorem...',
+      startDate: "2024-07-08T12:58:00Z",
+      contact: {name: "Nadine Mekler", mail:  "workwithus@cinemo.com", "mobile":  "+49 1517250277"},
+      interviews: [
+        {description: "First interview", dueDate: '2024-07-16T14:00:00Z', "participants":  [{"name":  "Frank Schmid", "Role": "Director Product Engineering"}, {"name":  "Ingo Regitz", "role":  "VP Engineering"},{"name":  "Nadine Mekler", "role":  "Principal Talent Acquisition Specialist"}] },
+      ],
+      certificates: [
+        {
+          title: 'AWS Solution Architect Associate'
+        },
+        {
+          title: 'ISAQB Software Architect Foundation'
+        },
+        {
+          title: 'Serverless Conf. London 2024'
+        }
+      ]
     }
   ]
 }

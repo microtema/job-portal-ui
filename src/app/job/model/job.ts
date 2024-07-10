@@ -1,7 +1,9 @@
 export interface JobData {
   name: string;
+  description: string;
   position: number;
   company: string;
+  companyDescription?: string;
   salary?: string;
   cv?: string;
   coverPaper?: String
@@ -37,4 +39,10 @@ export interface JobInterviewStatus {
   duration?:number;
   channel?: string;
   completed:boolean
+  participants?:Participant[]
+}
+
+export interface Participant {
+  name:string;
+  role?:string
 }

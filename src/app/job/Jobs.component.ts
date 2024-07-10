@@ -11,6 +11,7 @@ import {ContactComponent} from "../component/contact/contact.component";
 import {DateDurationComponent} from "../component/date-duration/date-duration.component";
 import {JobStatusComponent} from "../component/job-status/job-status.component";
 import {InterviewStatusComponent} from "../component/interview-status/interview-status.component";
+import {ActivatedRoute, Router, RouterOutlet} from "@angular/router";
 
 @Component({
   selector: 'app-dashboard',
@@ -22,18 +23,18 @@ import {InterviewStatusComponent} from "../component/interview-status/interview-
     MatPaginator,
     MatIcon,
     MatBadge,
-    ContactComponent, DateDurationComponent, JobStatusComponent, InterviewStatusComponent
+    ContactComponent, DateDurationComponent, JobStatusComponent, InterviewStatusComponent, RouterOutlet
   ]
 })
 export class JobsComponent implements OnInit{
   displayedColumns: string[] = ['position', 'name', 'company', 'salary', 'cv', 'coverPaper', 'certificates', 'contact', 'date', 'interviews', 'status'];
   totalData?: Number;
-  pageSizes = [5, 10, 20, 50];
+  pageSizes = [20, 50];
   dataSource = new MatTableDataSource<JobData>();
 
   @ViewChild('paginator') paginator!: MatPaginator;
 
-  constructor(public jobService: JobService) {}
+  constructor(public jobService: JobService, private router: Router) {}
 
   ngOnInit(): void {
   }
@@ -57,5 +58,10 @@ export class JobsComponent implements OnInit{
       .subscribe((jobs) => {
         this.dataSource = new MatTableDataSource(jobs.data);
       });
+  }
+
+  showDetails(id:string) {
+
+    this.router.navigate(['/jobs/'+id]).then();
   }
 }

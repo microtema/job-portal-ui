@@ -1,12 +1,14 @@
 import {Component, Input} from '@angular/core';
 import {JobInterviewStatus} from "../../job/model/job";
 import {MatIcon} from "@angular/material/icon";
+import {DatePipe} from "@angular/common";
 
 @Component({
   selector: 'app-interview-status',
   standalone: true,
   imports: [
-    MatIcon
+    MatIcon,
+    DatePipe
   ],
   templateUrl: './interview-status.component.html',
   styleUrl: './interview-status.component.css'

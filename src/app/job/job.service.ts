@@ -15,7 +15,7 @@ export class JobService {
 
     const url = `http://localhost:3000/jobs?_page=${pageNumber}&_per_page=${pageSize}`;
 
-    return this.http.get<any>(url)
+    return this.http.get<JobDataPage>(url)
       .pipe(map((data:any) => {
       return {
         data:data.data,
@@ -25,5 +25,12 @@ export class JobService {
         totalPages: data.pages
       }
     }));
+  }
+
+  public get(id:string): Observable<JobData> {
+
+    const url = `http://localhost:3000/jobs/${id}`;
+
+    return this.http.get<JobData>(url)
   }
 }

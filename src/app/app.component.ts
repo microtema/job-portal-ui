@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {RouterLink, RouterLinkActive, RouterOutlet} from '@angular/router';
+import {MatDivider} from "@angular/material/divider";
 
 export interface LinkData {
   path: string;
@@ -9,7 +10,7 @@ export interface LinkData {
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, RouterLink, RouterLinkActive],
+  imports: [RouterOutlet, RouterLink, RouterLinkActive, MatDivider],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
